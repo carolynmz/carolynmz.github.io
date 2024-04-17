@@ -243,14 +243,14 @@ a:hover {
 }
 
 .background-photo {
-  background-image: url("/images/background.png");
+  background-image: url("/images/background.jpg");
   filter: blur(calc(2vmin * var(--background-blur-progress, 0)));
   will-change: filter;
 }
 
 .background-photo-blurred {
   opacity: var(--background-blur-progress, 0);
-  background-image: url("/images/background-photo-blurred.png");
+  background-image: url("/images/background-blurred.jpg");
 }
 
 .background:before {
