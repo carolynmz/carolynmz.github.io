@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
+  <link rel="preload" as="image" href="/images/background.jpg">
+  <link rel="preload" as="image" href="/images/background-blurred.jpg">
   <style>
     html, body {
       background-color: #857970;
@@ -21,7 +23,14 @@
   <!--  <meta itemprop="image" content="https://carolynmz.github.io/images/background.png">-->
 </head>
 <body>
-<div class="background">
+<div class="background"
+     style="
+    background-image:url('data:image/png;base64,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');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+"
+>
   <div class="background-photo"></div>
   <div class="background-photo-blurred"></div>
 </div>
