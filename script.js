@@ -1,7 +1,7 @@
 const minmax = (value, min = Number.MIN_SAFE_INTEGER, max = Number.MAX_SAFE_INTEGER) => Math.min(max, Math.max(min, value));
 
 const backgroundContainer = document.querySelector(".background");
-const heroContainer = document.querySelector("section.hero");
+const heroContainer = document.querySelector(".js-hero");
 const scrollIcon = document.querySelector(".icon-scroll");
 
 const updateScrollThings = () => {
