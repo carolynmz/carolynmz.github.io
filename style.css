@@ -110,6 +110,10 @@ img {
   justify-content: space-between;
 }
 
+.flex-end {
+  justify-content: end;
+}
+
 .gap-1 {
   gap: 1rem;
 }
