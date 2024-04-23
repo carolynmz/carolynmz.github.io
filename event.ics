@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ical.marudot.com//iCal Event Maker
+CALSCALE:GREGORIAN
+BEGIN:VTIMEZONE
+TZID:America/New_York
+LAST-MODIFIED:20231222T233358Z
+TZURL:https://www.tzurl.org/zoneinfo-outlook/America/New_York
+X-LIC-LOCATION:America/New_York
+BEGIN:DAYLIGHT
+TZNAME:EDT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:EST
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20240423T222201Z
+UID:1713910888423-89487@ical.marudot.com
+DTSTART;VALUE=DATE:20240609
+DTEND;VALUE=DATE:20240610
+SUMMARY:Nazar and Carolina's wedding
+URL:https://carolynmz.github.io/
+DESCRIPTION:Nazar and Carolina request the honor of your presence at their wedding.\n\nCeremony begins at 2:00 p.m.\nReception begins at 4:00 p.m.\n\nDress Code: Black Tie Event\nThe Colors: Black\, White\, Golden
+LOCATION:Cleveland City Hall\, 601 Lakeside Ave E\, Cleveland\, OH 44114
+GEO:41.505183;-81.693713
+IMAGE;VALUE=URI;FMTTYPE=image/png:https://carolynmz.github.io/images/background.jpg
+COLOR:goldenrod
+END:VEVENT
+END:VCALENDAR

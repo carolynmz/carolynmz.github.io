@@ -9,7 +9,7 @@
       color: #e7e9ec;
     }
   </style>
-  <link rel="stylesheet" type="text/css" href="/style.css?v2" crossorigin="anonymous"/>
+  <link rel="stylesheet" type="text/css" href="/style.css?v3" crossorigin="anonymous"/>
   <meta name="theme-color" content="#857970">
   <meta name="msapplication-navbutton-color" content="#857970">
   <meta name="apple-mobile-web-app-status-bar-style" content="#857970">
@@ -51,6 +51,11 @@
   <img src="images/text_06-09-24.png" alt="" style="max-width: 40%; margin-right: -10%;"/>
   <img src="images/calendar.png" alt=""/>
 
+  <a href="/event.ics">
+    <button type="button">
+      Add the event to your calendar
+    </button>
+  </a>
   <span><!-- --></span>
 </section>
 
@@ -68,6 +73,7 @@
     width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy"
     referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+  <img src="images/parking.jpg" alt=""/>
   <span><!-- --></span>
 </section>
 
@@ -92,18 +98,57 @@
 <!-- INFO -->
 <section class="col gap-3 p-1 min-full">
   <img src="images/text_dress-code.png" alt="" style="height: 6rem"/>
-  <img src="images/text_black-tie-event.png" alt="" style="max-width: 45%;"/>
+  <img src="images/text_black-tie-event.png" alt="" style="max-width: 50%;"/>
   <span><!-- --></span>
   <img src="images/text_the-colors.png" alt="" style="height: 6rem"/>
-  <img src="images/text_colors-list.png" alt="" style="max-width: 45%;"/>
+  <img src="images/text_colors-list.png" alt="" style="max-width: 30%;"/>
 </section>
 
-<!-- INFO -->
-<section class="col gap-3">
-  <img src="images/background-2.jpg" alt=""/>
+<div class="form-background-holder">
+  <div class="form-background">
+    <div class="form-background-photo"></div>
+    <div class="form-background-photo-blurred"></div>
+  </div>
+</div>
+<section class="col flex-between gap-3 p-1 min-full" style="margin-top: -20vh">
+  <img src="images/text_form-title.png" alt="" style=""/>
+
+  <form method="POST" class="p-1 js-form"
+        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeS29zgDxX4_51y2n7ESEWBsTbUJ4tvUOzVoQo7CiJbEqkJ1A/formResponse">
+    <div class="py-1">
+      <label>
+        First/last name of all invited guests:
+      </label>
+      <textarea rows="4" name="entry.1343949897" required></textarea>
+    </div>
+    <div class="py-1">
+      <label>
+        Will you be present at our wedding?
+      </label>
+      <label class="form-radio">
+        <input type="radio" name="entry.1060193084" value="Yes, Happily" required checked>
+        Yes, Happily
+      </label>
+      <label class="form-radio">
+        <input type="radio" name="entry.1060193084" value="Regrettably, No" required>
+        Regrettably, No
+      </label>
+    </div>
+    <div class="py-1">
+      <label>
+        If you will have additional guests, please list them:
+      </label>
+      <textarea rows="4" name="entry.1978433678"></textarea>
+    </div>
+    <div class="py-1">
+      <button type="submit">
+        Submit
+      </button>
+    </div>
+  </form>
 </section>
 
 
-<script src="/script.js?v2" defer crossorigin="anonymous"></script>
+<script src="/script.js?v3" defer crossorigin="anonymous"></script>
 </body>
 </html>
