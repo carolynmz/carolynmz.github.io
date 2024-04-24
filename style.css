@@ -261,6 +261,7 @@ section {
 
 .form-background {
   position: relative;
+  will-change: transform;
 }
 
 .form-background-photo {
